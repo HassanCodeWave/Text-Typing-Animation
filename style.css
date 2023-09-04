@@ -1,0 +1,62 @@
+    
+    /* WORD BY WORD TEXT ANIMATION  */
+    .h-text{
+      margin-left: 30px;
+      line-height: 1.5rem;
+      text-align: center;
+      margin-top: 250px;
+    
+    }
+    .h-animate .text{
+    
+        position: relative;
+    
+        color: #4070F4;
+    
+        font-size: 100px;
+    
+        font-weight: 600;
+    
+    }
+    
+    .h-animate .text.first-text{
+    
+        color: black;
+    
+    }
+    
+    .text.sec-text:before{
+    
+        content: "";
+    
+        position: absolute;
+    
+        top: 0;
+    
+        left: 0;
+    
+        height: 100%;
+    
+        width: 100%;
+    
+        background-color: white;
+    
+        border-left: 2px solid #4070F4;
+    
+        animation: animate 4s steps(12) infinite;
+    
+    }
+    
+    @keyframes animate{
+    
+        40%, 60%{
+    
+            left: calc(100% + 4px);
+    
+        }
+    
+        100%{
+    
+            left: 0%;
+        }
+    }
